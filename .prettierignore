@@ -1,0 +1,12 @@
+#Ignore artifacts:
+./.history
+./.meteor
+./.vscode
+./.github
+./node_modules
+node_modules
+build
+coverage
+.gitignore
+.env
+.history

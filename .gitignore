@@ -1,0 +1,7 @@
+node_modules/
+.idea
+.history
+error_logs
+./deploy.json
+/src/public/uploads
+.env

@@ -1,0 +1,10 @@
+{
+    "apps": [
+        {
+            "name": "APP_NAME",
+            "script": "npx",
+            "interpreter": "none",
+            "args": "yarn run start"
+        }
+    ]
+}

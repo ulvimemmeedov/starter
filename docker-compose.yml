@@ -1,0 +1,12 @@
+# Docker compose file
+version: '3.8'
+services:
+    crm:
+        image: ulvimemmeedov/crm
+        env_file: ./.env
+        restart: always
+        ports:
+            - '5050:5050'
+
+        build: .
+        stdin_open: true
