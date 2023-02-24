@@ -19,20 +19,3 @@ jobs:
               run: cp .env.example .env
             - name: Run test
               run: npm test
-
-    # deploy:
-    #     needs: test
-    #     runs-on: ubuntu-latest
-
-    #     steps:
-    #         - name: Deploying to prod server
-    #           uses: appleboy/ssh-action@master
-    #           with:
-    #               host: ${{ secrets.HOST }}
-    #               username: ${{ secrets.USERNAME }}
-    #               password: ${{ secrets.PASSWORD }}
-    #               port: ${{ secrets.PORT }}
-    #               script: |
-    #                   cd /home/ases/CRM # move into app folder
-    #                   git pull origin master # pull from master
-    #                   sudo docker-compose up --build -d --remove-orphans
